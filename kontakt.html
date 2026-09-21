@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Book en uforpligtende introduktionssamtale om RED SEA READY."><meta name="theme-color" content="#061f2f">
+  <title>Book samtale – RED SEA READY</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Spring til indhold</a>
+  <header class="header"><div class="container header__inner"><a class="brand" href="index.html">RED SEA READY</a><button class="menu-toggle" type="button" aria-label="Åbn menu" aria-expanded="false" aria-controls="main-nav" data-menu-button><span></span></button><nav class="nav" id="main-nav" aria-label="Primær navigation" data-navigation data-open="false"><a href="index.html">Forside</a><a href="forloeb.html">Forløbet</a><a href="sikkerhed.html">Sikkerhed</a><a href="rodehavet.html">Rødehavet</a><a href="kontakt.html" aria-current="page">Kontakt</a></nav><a class="button button--secondary button--header" href="#booking">Book samtale</a></div></header>
+  <main id="main">
+    <section class="hero"><img class="hero__image" src="assets/roots-community.jpg" alt="Et hold dykkere gør sig klar på en båd." fetchpriority="high"><div class="hero__content"><p class="eyebrow">Klar til første skridt?</p><h1>Er dykning noget for dig?</h1><p class="lead">En uforpligtende samtale er det første, lille skridt. Vi taler om forløbet, dine spørgsmål og det, der eventuelt holder dig tilbage.</p><div class="button-row"><a class="button" href="#booking">Book en introduktionssamtale</a></div></div></section>
+    <section class="section section--sand" id="booking"><div class="container form-layout"><div><p class="eyebrow">Det kan vi tale om</p><h2>Ingen salgspræstation. Bare en afklaring.</h2><ul class="check-list"><li>Hvordan kurset er bygget op</li><li>Fysiske og helbredsmæssige krav</li><li>Sikkerhed, instruktør og små hold</li><li>Udstyr, pris og særskilte betalinger</li><li>At rejse alene eller med en partner</li><li>Nervøsitet for dybde, udstyr eller vejrtrækning</li></ul></div>
+      <div>
+        <form class="form" data-prototype-form>
+          <div class="form-grid">
+            <div class="field"><label for="name">Navn</label><input id="name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field field--full"><label for="phone">Telefon <span aria-hidden="true">(valgfrit)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+            <fieldset class="field field--full"><legend>Har du prøvet dykning før?</legend><div class="radio-row"><label><input type="radio" name="experience" value="no" required> Nej</label><label><input type="radio" name="experience" value="yes"> Ja</label><label><input type="radio" name="experience" value="snorkel"> Snorkling eller prøvedyk</label></div></fieldset>
+            <div class="field field--full"><label for="question">Hvad er du mest nysgerrig eller usikker på?</label><textarea id="question" name="question"></textarea></div>
+            <div class="field field--full"><label for="contact">Foretrukken kontakt</label><select id="contact" name="contact"><option>E-mail</option><option>Telefon</option></select></div>
+          </div>
+          <button class="button" type="submit">Book min introduktionssamtale</button>
+          <p class="form-note">Du binder dig ikke til en rejse. Studieprototypen sender og gemmer ingen personoplysninger.</p>
+        </form>
+        <section class="form-success" data-form-success hidden tabindex="-1" aria-live="polite"><p class="eyebrow">Tak</p><h2>Din interesse er registreret i prototypen.</h2><p>Ingen oplysninger er sendt. I en virkelig løsning ville du nu få en bekræftelse med forslag til et tidspunkt.</p><a class="button" href="index.html">Tilbage til forsiden</a></section>
+      </div>
+    </div></section>
+    <section class="section section--foam"><div class="container faq"><p class="eyebrow">Ofte stillede spørgsmål</p><h2>Før du beslutter dig</h2>
+      <details><summary>Skal jeg have dykket før?</summary><p>Nej. PADI Open Water er et begynderforløb.</p></details>
+      <details><summary>Hvor dybt må jeg dykke bagefter?</summary><p>Nye PADI Open Water-dykkere kan dykke til 18 meter med en makker inden for uddannelse og erfaring.</p></details>
+      <details><summary>Skal jeg være i særlig god form?</summary><p>Du skal kunne svømme 200 meter og holde dig flydende i 10 minutter. Et helbredsskema afgør, om lægelig godkendelse er nødvendig.</p></details>
+      <details><summary>Hvad hvis jeg bliver utryg?</summary><p>Du kan stoppe, stille spørgsmål og gentage øvelser. Ingen bør presses ned i vandet for at holde en tidsplan.</p></details>
+      <details><summary>Kan jeg rejse med en partner, der ikke dykker?</summary><p>Det afhænger af udbyderens aktuelle rejse- og værelsesmuligheder og skal bekræftes i samtalen.</p></details>
+      <details><summary>Er alt udstyr med i prisen?</summary><p>Kun det, der står i den aktuelle prisoversigt. Udstyrsleje og andre tillæg skal vises tydeligt før booking.</p></details>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><strong>RED SEA READY</strong><nav class="footer-links" aria-label="Footer"><a href="index.html">Forside</a><a href="forloeb.html">Forløbet</a><a href="sikkerhed.html">Sikkerhed</a><a href="rodehavet.html">Rødehavet</a><a href="kilder.html">Projekt og kilder</a></nav></div><p class="footer-note">Selvstændigt studieprojekt. Formularen demonstrerer brugerrejsen og sender ingen data. <a href="kilder.html">Se projektstatus og kilder</a>.</p></div></footer>
+</body>
+</html>
