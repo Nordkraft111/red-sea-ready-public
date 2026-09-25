@@ -4,6 +4,7 @@
   --azure: #0797b8;
   --deep: #061f2f;
   --coral: #ef6a57;
+  --coral-on-light: #b83f32;
   --sand: #eee8da;
   --foam: #f8f7f2;
   --white: #ffffff;
@@ -69,6 +70,12 @@ button, input, textarea, select { font: inherit; }
   letter-spacing: 0.12em;
   line-height: 1.5;
   text-transform: uppercase;
+}
+
+:where(.section--foam, .section--sand) .eyebrow,
+.fact strong,
+.card--light .card__number {
+  color: var(--coral-on-light);
 }
 
 h1, h2, blockquote {
@@ -282,7 +289,12 @@ p { margin-block: 0 1.25rem; }
   display: grid;
   gap: 2rem;
 }
-.facts { grid-template-columns: repeat(3, 1fr); margin-top: 5rem; }
+.facts {
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
 .fact {
   min-height: 8rem;
   padding: 1.75rem;
@@ -292,7 +304,7 @@ p { margin-block: 0 1.25rem; }
 .fact strong {
   display: block;
   margin-bottom: 0.75rem;
-  color: var(--coral);
+  color: var(--coral-on-light);
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 2.5rem;
   line-height: 1;
@@ -387,6 +399,7 @@ fieldset { margin: 0; padding: 0; border: 0; }
 .form .button { margin-top: 1.5rem; width: 100%; }
 .form-note { margin-top: 1rem; font-size: 0.8rem; color: rgba(10,35,50,.75); }
 .form-success { padding: 3rem; border-radius: var(--radius); background: var(--deep); color: var(--foam); }
+.form-success .eyebrow { color: var(--coral); }
 .form-success[hidden] { display: none; }
 
 .faq { max-width: 56rem; margin-inline: auto; }
