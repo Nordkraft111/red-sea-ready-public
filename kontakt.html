@@ -2,6 +2,7 @@
 <html lang="da">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="form-action 'none'">
   <meta name="description" content="Book en uforpligtende introduktionssamtale om RED SEA READY."><meta name="theme-color" content="#061f2f">
   <title>Book samtale – RED SEA READY</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -15,18 +16,22 @@
     <section class="section section--sand" id="booking"><div class="container form-layout"><div><p class="eyebrow">Det kan vi tale om</p><h2>Ingen salgspræstation. Bare en afklaring.</h2><ul class="check-list"><li>Hvordan kurset er bygget op</li><li>Fysiske og helbredsmæssige krav</li><li>Sikkerhed, instruktør og små hold</li><li>Udstyr, pris og særskilte betalinger</li><li>At rejse alene eller med en partner</li><li>Nervøsitet for dybde, udstyr eller vejrtrækning</li></ul></div>
       <div>
         <form class="form" data-prototype-form>
+          <p class="form-note" data-form-unavailable>Formularen er ikke aktiv. Felterne kan først bruges, når den interaktive demo er indlæst.</p>
+          <noscript><p class="form-note">Demoen kræver JavaScript. Formularen er låst, og ingen oplysninger kan sendes.</p></noscript>
+          <fieldset data-prototype-fields disabled aria-label="Prøv introduktionssamtalen">
           <div class="form-grid">
             <div class="field"><label for="name">Navn</label><input id="name" name="name" autocomplete="name" required></div>
             <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-            <div class="field field--full"><label for="phone">Telefon <span aria-hidden="true">(valgfrit)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="field field--full"><label for="phone">Telefon <span data-phone-note>(valgfrit)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
             <fieldset class="field field--full"><legend>Har du prøvet dykning før?</legend><div class="radio-row"><label><input type="radio" name="experience" value="no" required> Nej</label><label><input type="radio" name="experience" value="yes"> Ja</label><label><input type="radio" name="experience" value="snorkel"> Snorkling eller prøvedyk</label></div></fieldset>
             <div class="field field--full"><label for="question">Hvad er du mest nysgerrig eller usikker på?</label><textarea id="question" name="question"></textarea></div>
-            <div class="field field--full"><label for="contact">Foretrukken kontakt</label><select id="contact" name="contact"><option>E-mail</option><option>Telefon</option></select></div>
+            <div class="field field--full"><label for="contact">Foretrukken kontakt</label><select id="contact" name="contact"><option value="email">E-mail</option><option value="phone">Telefon</option></select></div>
           </div>
           <button class="button" type="submit">Book min introduktionssamtale</button>
+          </fieldset>
           <p class="form-note">Du binder dig ikke til en rejse. Studieprototypen sender og gemmer ingen personoplysninger.</p>
         </form>
-        <section class="form-success" data-form-success hidden tabindex="-1" aria-live="polite"><p class="eyebrow">Tak</p><h2>Din interesse er registreret i prototypen.</h2><p>Ingen oplysninger er sendt. I en virkelig løsning ville du nu få en bekræftelse med forslag til et tidspunkt.</p><a class="button" href="index.html">Tilbage til forsiden</a></section>
+        <section class="form-success" data-form-success hidden tabindex="-1" aria-live="polite"><p class="eyebrow">Tak</p><h2>Du har prøvet bookingforløbet.</h2><p>Der er ikke oprettet en booking, og ingen oplysninger er sendt eller gemt. I en virkelig løsning ville du nu få en bekræftelse med forslag til et tidspunkt.</p><a class="button" href="index.html">Tilbage til forsiden</a></section>
       </div>
     </div></section>
     <section class="section section--foam"><div class="container faq"><p class="eyebrow">Ofte stillede spørgsmål</p><h2>Før du beslutter dig</h2>
