@@ -344,6 +344,21 @@ p { margin-block: 0 1.25rem; }
 .image-panel__body .lead { margin-top: 2rem; }
 .image-panel__body .button { justify-self: start; margin-top: 2rem; }
 
+.destination-teaser { padding-top: 0; }
+.image-panel--destination {
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr);
+  gap: clamp(2.5rem, 6vw, 6rem);
+  min-height: 0;
+  align-items: center;
+}
+.image-panel--destination .image-panel__media {
+  min-height: 0;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius);
+}
+.image-panel--destination .image-panel__image { object-position: 50% 35%; }
+.image-panel--destination .image-panel__body { padding: 0; }
+
 .full-image {
   position: relative;
   display: grid;
