@@ -10,6 +10,12 @@ Offentlig, responsiv studieprototype til Tema 2 på multimediedesigneruddannelse
 
 Seks responsive sider om dykkerforløb, sikkerhed, Rødehavet, kontakt og kilder. Formularen sender ingen data.
 
+## Baggrundslyd
+
+Magnus har leveret og valgt optagelsen med hav-/dykkerlyd. Den er klargjort som et dæmpet MP3-loop på cirka 28 sekunder i `assets/audio/red-sea-ambience.mp3`. `AUDIO_SOURCE` i `ambient-audio.js` peger på denne fil, og lydændringen er klar til udgivelse. Publicering på Simply er endnu ikke kontrolleret. En tom central kilde deaktiverer lyden helt, uden at oprette en lydafspiller eller hente en lydfil.
+
+Siden forsøger at afspille lydfilen automatisk i loop. Hvis browseren blokerer lydstart, forsøges igen ved det første faktiske klik eller almindelige tastetryk; automatisk afspilning med lyd kan ikke garanteres. Der er ingen lydknap, player eller volumekontrol på siden. Lyd slukkes via browserens eller computerens lydstyring. Afspilningsposition gemmes om muligt under sideskift i samme fane, men skift mellem statiske sider kan give en kort afbrydelse. Løsningen opfylder ikke fuldt WCAG-kravet Audio Control uden en særskilt funktion til stop eller lydstyrke på siden.
+
 ## Verificeret
 
 - Kontrolleret ved 1440 px og 390 px.
