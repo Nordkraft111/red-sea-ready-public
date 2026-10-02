@@ -7,9 +7,10 @@
   <meta name="theme-color" content="#061f2f">
   <title>RED SEA READY – Dybden standser tiden</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261002-video">
   <script src="script.js" defer></script>
   <script src="ambient-audio.js" defer></script>
+  <script src="destination-video.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Spring til indhold</a>
@@ -78,7 +79,11 @@
 
     <section class="section section--deep destination-teaser">
       <div class="container image-panel image-panel--destination">
-      <div class="image-panel__media"><img class="image-panel__image" src="assets/ras-mohammed.jpg" width="2200" height="1650" loading="lazy" alt="To dykkere i lyst, blåt vand over et koralrev."></div>
+      <div class="image-panel__media destination-video" data-destination-video data-video-src="assets/video/red-sea-underwater.mp4">
+        <img class="image-panel__image destination-video__fallback" src="assets/ras-mohammed.jpg" width="2200" height="1650" loading="lazy" alt="To dykkere i lyst, blåt vand over et koralrev.">
+        <video class="destination-video__video" width="2200" height="1650" poster="assets/ras-mohammed.jpg" muted loop playsinline preload="none" aria-hidden="true" hidden></video>
+        <button class="destination-video__toggle" type="button" hidden>Afspil video</button>
+      </div>
       <div class="image-panel__body">
         <p class="eyebrow">Rødehavet</p>
         <h2>Rejsen giver læringen liv.</h2>

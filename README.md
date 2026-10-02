@@ -16,6 +16,12 @@ Magnus har leveret og valgt optagelsen med hav-/dykkerlyd. Den er klargjort som 
 
 Siden forsøger at afspille lydfilen automatisk i loop. Hvis browseren blokerer lydstart, forsøges igen ved det første faktiske klik eller almindelige tastetryk; automatisk afspilning med lyd kan ikke garanteres. Der er ingen lydknap, player eller volumekontrol på siden. Lyd slukkes via browserens eller computerens lydstyring. Afspilningsposition gemmes om muligt under sideskift i samme fane, men skift mellem statiske sider kan give en kort afbrydelse. Løsningen opfylder ikke fuldt WCAG-kravet Audio Control uden en særskilt funktion til stop eller lydstyrke på siden.
 
+## Video i destinationsfeltet
+
+Forsidens billedfelt ved “Rejsen giver læringen liv” bruger den videofil, Magnus har leveret og valgt. Hele videoforløbet på 58,133 sekunder er bevaret i `assets/video/red-sea-underwater.mp4`. Originalen er urørt. Webkopien er H.264 MP4 i 960 × 540 ved 30 billeder i sekundet, med let støjdæmpning og uden optagelsens lyd eller private metadata.
+
+`data-video-src` i `index.html` peger på filen. `destination-video.js` starter et tavst loop, når feltet er synligt. Videoen fylder samme afrundede 4:3-felt med `object-fit: cover`; det brede udsnit bliver derfor beskåret i siderne. Baggrundslyden styres fortsat separat. En lille pause-/afspilknap gælder kun videoen. Ved reduceret bevægelse, afspilningsblokering eller en ugyldig fil bruges fotografiet som reserve. En tom `data-video-src` deaktiverer videoen uden mediehentning. Ingen ekstern afspiller er tilføjet.
+
 ## Verificeret
 
 - Kontrolleret ved 1440 px og 390 px.
